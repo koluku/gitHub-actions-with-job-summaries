@@ -1,0 +1,14 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-request:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Adding markdown
+        run: cat longlong.md >> $GITHUB_STEP_SUMMARY
