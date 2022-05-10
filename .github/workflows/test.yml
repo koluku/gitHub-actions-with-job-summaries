@@ -15,4 +15,4 @@ jobs:
       - name: Echo $GITHUB_STEP_SUMMARY
         run: echo $GITHUB_STEP_SUMMARY
       - name: Adding markdown
-        run: cat longlong.md >> $GITHUB_STEP_SUMMARY
+        run: cat checkbox.md >> $GITHUB_STEP_SUMMARY
